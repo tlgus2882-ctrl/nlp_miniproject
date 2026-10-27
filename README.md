@@ -21,9 +21,10 @@ NLP 미니프로젝트#1. 네이버 영화 리뷰를 긍정/부정 2개로만 �
 |---|---|---|---|
 | [01_nsmc_polarity](notebooks/01_nsmc_polarity.ipynb) | Before: KoELECTRA로 NSMC 극성 분류 재현 | test 정확도 **91.09%** (보고치 90.63%) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tlgus2882-ctrl/nlp_miniproject/blob/main/notebooks/01_nsmc_polarity.ipynb) |
 | [02_kote_eda_mapping](notebooks/02_kote_eda_mapping.ipynb) | KOTE 분석, 정답 기준 결정, 44개 원본 라벨 → 8개 감정 범주 변환 | train/val/test 38,687 / 4,835 / 4,844건 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tlgus2882-ctrl/nlp_miniproject/blob/main/notebooks/02_kote_eda_mapping.ipynb) |
-| 03 (예정) | After: 직접 학습 vs 2단계 학습 | — | — |
+| [03_direct_vs_two_stage](notebooks/03_direct_vs_two_stage.ipynb) | After: 직접 학습 vs 2단계 학습 (2방식 × 시드 3개, max_len 128) | 실행 후 기록 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tlgus2882-ctrl/nlp_miniproject/blob/main/notebooks/03_direct_vs_two_stage.ipynb) |
+| [04_final_model](notebooks/04_final_model.ipynb) | 최종 모델: 2단계 학습 시드 선택, 범주별 threshold 튜닝, NSMC 데모·극성 일관성 점검 | 실행 후 기록 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tlgus2882-ctrl/nlp_miniproject/blob/main/notebooks/04_final_model.ipynb) |
 
-01은 GPU(Colab T4)가 필요하고, 02는 CPU로 돈다.
+01·03은 GPU(Colab T4)가 필요하고, 02는 CPU로 돈다. 03은 01이 Drive에 저장한 NSMC 모델을, 04는 03이 Drive에 남긴 결과를 불러온다. 04의 1~2절은 CPU로 돈다.
 
 ## 데이터
 
