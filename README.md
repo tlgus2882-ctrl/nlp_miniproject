@@ -2,7 +2,7 @@
 
 NLP 미니프로젝트#1. 네이버 영화 리뷰를 긍정/부정 2개로만 나누던 KoELECTRA 코드(Before)를, 한 리뷰에 여러 감정이 붙을 수 있는 8개 감정 범주 분류 코드(After)로 바꾼다.
 
-용어는 [GLOSSARY.md](GLOSSARY.md)를 따른다.
+용어는 [GLOSSARY.md](GLOSSARY.md)를 따른다. 결과 정리는 [docs/results.md](docs/results.md), 발표 자료는 [docs/results.pptx](docs/results.pptx).
 
 ## Before → After
 
